@@ -13,7 +13,8 @@ h1{
     margin-bottom: 0px;
 }
 h3{
-    font-size: 24px;
+    font-size: 26px;
+    color: teal;
     margin-left: 170px;
 }
 h4{
@@ -29,7 +30,7 @@ main{
     display: flex;
     margin-bottom: 100px;
 }
-.influencer-details{
+.influencer-details, .marketing-details{
     width: 582px;
     margin-right: 120px;
     text-align:justify;
@@ -71,6 +72,10 @@ main{
     border-radius: 5px;
     padding: 10px;
 }
+.collection:hover .collection-img{
+    transform: scale(1.2);
+            transition: transform 2s ease-out;
+}
 .collection-name{
    margin: 15px;
 }
@@ -96,6 +101,25 @@ main{
 }
 .fa-star.empty{
     color: #AEAEAE;
+}
+/* ......................media style................................. */
+.media-section{
+    display: flex;
+    margin-top: 100px;
+    border: 1px solid slategrey;
+}
+.influencer-media{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 0;
+   padding-right: 10px;
+
+}
+.marketing-details{
+    padding-left: 10px;
+}
+.marketing-info{
+    margin-bottom: 0;
 }
 /* .......................footer style ..............................*/
 footer{
