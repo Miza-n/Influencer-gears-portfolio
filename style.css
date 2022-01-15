@@ -1,7 +1,7 @@
 /*..................................... fonts............................................. */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-/*........... common styles or utilities..........*/
+/*............................. common styles or utilities..........................*/
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -74,7 +74,7 @@ main{
 }
 .collection:hover .collection-img{
     transform: scale(1.2);
-            transition: transform 2s ease-out;
+    transition: transform 2s ease-out;
 }
 .collection-name{
    margin: 15px;
@@ -102,7 +102,7 @@ main{
 .fa-star.empty{
     color: #AEAEAE;
 }
-/* ......................media style................................. */
+/* ................................media style................................. */
 .media-section{
     display: flex;
     margin-top: 100px;
@@ -121,7 +121,7 @@ main{
 .marketing-info{
     margin-bottom: 0;
 }
-/* .......................footer style ..............................*/
+/* ................................footer style ...................................*/
 footer{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 100px;
@@ -140,4 +140,43 @@ footer{
     margin-right: 15px;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+/*............................Mobile Devices.............................. */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .influencer-details, .influencer-img{
+        width: 100%;
+    }
+    .marketing-details{
+        width: 80%;
+    }
+    .influencer-media{
+        width: 100%;
+    }
+    .popular-collection, .collections{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .influencer, .collection, .media-section{
+        flex-direction: column;
+    }
+}
+/* ...........................Tablet devices.......................... */
+@media only screen and (min-width:688px) and (max-width:992px){
+.container{
+    width: 100%;
+}
+.influencer-details, .influencer-img, .influencer-media{
+    width: 100%;
+}
+.marketing-details{
+    width: 90%;
+}
+.popular-collection, .collections, .media-section {
+    grid-template-columns: repeat(2, 1fr);
+}
+.influencer, .collection, .media-section{
+    flex-direction: column;
+}
 }
